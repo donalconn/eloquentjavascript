@@ -11,6 +11,9 @@
 
 function range(start, end, step = 1) {
 
+    if (end < step && step > 0) {
+        step = -1;
+    }
 
 
     var rangeArray = [];
